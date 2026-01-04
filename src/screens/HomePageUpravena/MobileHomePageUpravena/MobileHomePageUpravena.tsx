@@ -13,6 +13,7 @@ import { useReadingEffect } from "../../../hooks/useReadingEffect";
 import { useScrollTrigger } from "../../../hooks/useScrollTrigger";
 
 export const MobileHomePageUpravena = (): JSX.Element => {
+  const currentYear = new Date().getFullYear();
   const navigate = useNavigate();
   const { backgroundUrl, filmDesignUrl, filmCodingUrl, referenceImages } = useWebsiteImagesMobile();
   const { breakpoint, layout, getResponsiveValue } = useResponsiveLayoutMobile();
@@ -1815,7 +1816,7 @@ export const MobileHomePageUpravena = (): JSX.Element => {
                   fontSize: `${footerLayout.copyrightFontSize}px`,
                 }}
               >
-                Copyright © 2025 – Alvion<br />All rights reserved.
+                Copyright © {currentYear} – Alvion<br />All rights reserved.
               </div>
             </div>
           </div>
@@ -1985,7 +1986,7 @@ export const MobileHomePageUpravena = (): JSX.Element => {
                   lineHeight: footerLayout.contactLineHeight,
                 }}
               >
-                Copyright © 2025 – Alvion<br />All rights reserved.
+                Copyright © {currentYear} – Alvion<br />All rights reserved.
               </div>
             </div>
           </div>

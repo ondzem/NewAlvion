@@ -8,6 +8,7 @@ import { useResponsiveLayoutMobile } from "../../../hooks/useResponsiveLayoutMob
 import { useWebsiteImagesMobile } from "../../../hooks/useWebsiteImagesMobile";
 
 export const MobileGDPRPage = (): JSX.Element => {
+  const currentYear = new Date().getFullYear();
   const [isLoaded, setIsLoaded] = useState(false);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== 'undefined' ? window.innerWidth : 768
@@ -892,7 +893,7 @@ export const MobileGDPRPage = (): JSX.Element => {
                     fontSize: `${footerLayout.copyrightFontSize}px`,
                   }}
                 >
-                  Copyright © 2025 – Alvion<br />All rights reserved.
+                  Copyright © {currentYear} – Alvion<br />All rights reserved.
                 </div>
               </div>
             ) : (
@@ -1025,7 +1026,7 @@ export const MobileGDPRPage = (): JSX.Element => {
                     lineHeight: footerLayout.contactLineHeight,
                   }}
                 >
-                  Copyright © 2025 – Alvion<br />All rights reserved.
+                  Copyright © {currentYear} – Alvion<br />All rights reserved.
                 </div>
               </div>
             )}

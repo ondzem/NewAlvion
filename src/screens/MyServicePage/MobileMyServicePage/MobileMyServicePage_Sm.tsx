@@ -9,6 +9,7 @@ import { useResponsiveLayoutMobile } from "../../../hooks/useResponsiveLayoutMob
 import { useWebsiteImagesMobile } from "../../../hooks/useWebsiteImagesMobile";
 
 export const MobileMyServicePage_Sm = (): JSX.Element => {
+  const currentYear = new Date().getFullYear();
   const navigate = useNavigate();
   const location = useLocation();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -714,7 +715,7 @@ export const MobileMyServicePage_Sm = (): JSX.Element => {
                   fontSize: `${footerLayout.copyrightFontSize}px`,
                 }}
               >
-                Copyright © 2025 – Alvion<br />All rights reserved.
+                Copyright © {currentYear} – Alvion<br />All rights reserved.
               </div>
             </div>
           </div>
@@ -882,7 +883,7 @@ export const MobileMyServicePage_Sm = (): JSX.Element => {
                   lineHeight: footerLayout.contactLineHeight,
                 }}
               >
-                Copyright © 2025 – Alvion<br />All rights reserved.
+                Copyright © {currentYear} – Alvion<br />All rights reserved.
               </div>
             </div>
           </div>

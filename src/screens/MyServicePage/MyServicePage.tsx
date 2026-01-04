@@ -13,6 +13,7 @@ import { useLockedHorizontalScroll } from "../../hooks/useLockedHorizontalScroll
 import { breakpoints } from "../../config/breakpoints";
 
 export const MyServicePage = (): JSX.Element => {
+  const currentYear = new Date().getFullYear();
   const location = useLocation();
   const [isMobile, setIsMobile] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -836,7 +837,7 @@ export const MyServicePage = (): JSX.Element => {
                 lineHeight: footerLayout.contactLineHeight,
               }}
             >
-              Copyright © 2025 – Alvion<br />All rights reserved.
+              Copyright © {currentYear} – Alvion<br />All rights reserved.
             </div>
           </div>
         </div>

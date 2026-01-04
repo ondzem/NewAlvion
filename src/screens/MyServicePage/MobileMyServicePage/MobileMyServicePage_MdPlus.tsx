@@ -21,6 +21,7 @@ interface MobileMyServicePage_MdPlusProps {
   contactRef: React.RefObject<HTMLElement>;
   footerRef: React.RefObject<HTMLElement>;
   serviceDescriptions: any[];
+  currentYear: number;
 }
 
 export const MobileMyServicePage_MdPlus: React.FC<MobileMyServicePage_MdPlusProps> = ({
@@ -40,6 +41,7 @@ export const MobileMyServicePage_MdPlus: React.FC<MobileMyServicePage_MdPlusProp
   contactRef,
   footerRef,
   serviceDescriptions,
+  currentYear,
 }) => {
   return (
     <div className="w-full min-h-screen bg-white">
@@ -502,7 +504,7 @@ export const MobileMyServicePage_MdPlus: React.FC<MobileMyServicePage_MdPlusProp
                 lineHeight: footerLayout.contactLineHeight,
               }}
             >
-              Copyright © 2025 – Alvion<br />All rights reserved.
+              Copyright © {currentYear} – Alvion<br />All rights reserved.
             </div>
           </div>
         </div>

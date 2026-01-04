@@ -11,6 +11,7 @@ import { useWebsiteImages } from "../../hooks/useWebsiteImages";
 import { breakpoints } from "../../config/breakpoints";
 
 export const PortfolioPage = (): JSX.Element => {
+  const currentYear = new Date().getFullYear();
   const [isMobile, setIsMobile] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [openReferenceCard, setOpenReferenceCard] = useState<string>("elektrika");
@@ -605,7 +606,7 @@ export const PortfolioPage = (): JSX.Element => {
                   lineHeight: footerLayout.contactLineHeight,
                 }}
               >
-                Copyright © 2025 – Alvion<br />All rights reserved.
+                Copyright © {currentYear} – Alvion<br />All rights reserved.
               </div>
             </div>
           </div>

@@ -8,6 +8,7 @@ import { useResponsiveLayoutMobile } from "../../../hooks/useResponsiveLayoutMob
 import { useWebsiteImagesMobile } from "../../../hooks/useWebsiteImagesMobile";
 
 export const MobilePortfolioPage = (): JSX.Element => {
+  const currentYear = new Date().getFullYear();
   const navigate = useNavigate();
   const location = useLocation();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -722,7 +723,7 @@ export const MobilePortfolioPage = (): JSX.Element => {
                     fontSize: `${footerLayout.copyrightFontSize}px`,
                   }}
                 >
-                  Copyright © 2025 – Alvion<br />All rights reserved.
+                  Copyright © {currentYear} – Alvion<br />All rights reserved.
                 </div>
               </div>
             ) : (
@@ -854,7 +855,7 @@ export const MobilePortfolioPage = (): JSX.Element => {
                     lineHeight: footerLayout.contactLineHeight,
                   }}
                 >
-                  Copyright © 2025 – Alvion<br />All rights reserved.
+                  Copyright © {currentYear} – Alvion<br />All rights reserved.
                 </div>
               </div>
             )}

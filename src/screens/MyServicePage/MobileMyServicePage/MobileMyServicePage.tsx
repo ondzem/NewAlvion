@@ -9,6 +9,7 @@ import { MobileMyServicePage_Sm } from "./MobileMyServicePage_Sm";
 import { breakpoints } from "../../../config/breakpoints";
 
 export const MobileMyServicePage = (): JSX.Element => {
+  const currentYear = new Date().getFullYear();
   const location = useLocation();
   const [isLoaded, setIsLoaded] = useState(false);
   const [isSmallMobile, setIsSmallMobile] = useState(false);
@@ -193,6 +194,7 @@ export const MobileMyServicePage = (): JSX.Element => {
       contactRef={contactRef}
       footerRef={footerRef}
       serviceDescriptions={serviceDescriptions}
+      currentYear={currentYear}
     />
   );
 };
