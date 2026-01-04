@@ -1,0 +1,1 @@
+export { MyServicePage } from "./MyServicePage";

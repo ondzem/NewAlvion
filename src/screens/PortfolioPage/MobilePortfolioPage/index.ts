@@ -1,0 +1,1 @@
+export { MobilePortfolioPage } from "./MobilePortfolioPage";

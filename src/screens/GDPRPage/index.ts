@@ -1,0 +1,1 @@
+export { GDPRPage } from "./GDPRPage";

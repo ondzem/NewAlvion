@@ -1,0 +1,1 @@
+export { MobileErrorPage } from './MobileErrorPage';

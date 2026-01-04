@@ -1,0 +1,1 @@
+export { MobileGDPRPage } from "./MobileGDPRPage";
